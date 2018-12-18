@@ -8,6 +8,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import static com.lawrence254.mpesadaraja.AppConstants.BUSINESS_SHORT_CODE;
+import static com.lawrence254.mpesadaraja.AppConstants.CALLBACKURL;
+import static com.lawrence254.mpesadaraja.AppConstants.PARTYB;
+import static com.lawrence254.mpesadaraja.AppConstants.PASSKEY;
+import static com.lawrence254.mpesadaraja.AppConstants.TRANSACTION_TYPE;
+
 public class MainActivity extends AppCompatActivity {
 
     private ApiClient mApiClient;
