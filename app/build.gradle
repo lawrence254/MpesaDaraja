@@ -16,6 +16,13 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    //Add this section to your app level gradle file.
+    buildTypes.each {
+
+        // CONSUMER_KEY & CONSUMER_SECRET Build Variables are referenced from gradle.properties file
+        it.buildConfigField 'String', 'CONSUMER_KEY', DARAJA_CONSUMER_KEY
+        it.buildConfigField 'String', 'CONSUMER_SECRET', DARAJA_CONSUMER_SECRET
+    }
 }
 
 dependencies {
