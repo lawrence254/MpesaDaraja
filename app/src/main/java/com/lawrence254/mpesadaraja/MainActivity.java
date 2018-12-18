@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.lawrence254.mpesadaraja.mpesa.Utils;
+
 import static com.lawrence254.mpesadaraja.AppConstants.BUSINESS_SHORT_CODE;
 import static com.lawrence254.mpesadaraja.AppConstants.CALLBACKURL;
 import static com.lawrence254.mpesadaraja.AppConstants.PARTYB;

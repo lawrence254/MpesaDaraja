@@ -1,4 +1,4 @@
-package com.lawrence254.mpesadaraja.services;
+package com.lawrence254.mpesadaraja.mpesa;
 
 import android.util.Base64;
 
