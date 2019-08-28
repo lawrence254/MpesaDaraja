@@ -1,9 +1,16 @@
 package com.lawrence254.mpesadaraja.mpesa;
 
+import com.lawrence254.mpesadaraja.mpesa.interceptor.AccessTokenInterceptor;
+import com.lawrence254.mpesadaraja.mpesa.interceptor.AuthInterceptor;
 import com.lawrence254.mpesadaraja.mpesa.services.STKPushService;
 
 import java.util.concurrent.TimeUnit;
 
+
+import okhttp3.OkHttpClient;
+import okhttp3.logging.HttpLoggingInterceptor;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 import static com.lawrence254.mpesadaraja.AppConstants.BASE_URL;
 import static com.lawrence254.mpesadaraja.AppConstants.CONNECT_TIMEOUT;
