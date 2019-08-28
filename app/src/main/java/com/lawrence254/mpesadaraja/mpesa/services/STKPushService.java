@@ -1,5 +1,8 @@
 package com.lawrence254.mpesadaraja.mpesa.services;
 
+import com.lawrence254.mpesadaraja.mpesa.model.AccessToken;
+import com.lawrence254.mpesadaraja.mpesa.model.STKPush;
+
 import retrofit2.Call;
 import retrofit2.http.Body;
 import retrofit2.http.GET;

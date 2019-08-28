@@ -8,7 +8,17 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.lawrence254.mpesadaraja.mpesa.ApiClient;
 import com.lawrence254.mpesadaraja.mpesa.Utils;
+import com.lawrence254.mpesadaraja.mpesa.model.AccessToken;
+import com.lawrence254.mpesadaraja.mpesa.model.STKPush;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import timber.log.Timber;
 
 import static com.lawrence254.mpesadaraja.AppConstants.BUSINESS_SHORT_CODE;
 import static com.lawrence254.mpesadaraja.AppConstants.CALLBACKURL;
@@ -16,7 +26,7 @@ import static com.lawrence254.mpesadaraja.AppConstants.PARTYB;
 import static com.lawrence254.mpesadaraja.AppConstants.PASSKEY;
 import static com.lawrence254.mpesadaraja.AppConstants.TRANSACTION_TYPE;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private ApiClient mApiClient;
     private ProgressDialog mProgressDialog;
@@ -113,5 +123,10 @@ public class MainActivity extends AppCompatActivity {
                 Timber.e(t);
             }
         });
+    }
+
+    @Override
+    public void onPointerCaptureChanged(boolean hasCapture) {
+
     }
 }
